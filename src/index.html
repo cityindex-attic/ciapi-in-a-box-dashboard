@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title>CIAPI-in-a-box - Dashboard</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="../libs/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="../libs/jquery-ui/1.8.11/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../libs/jquery.jsPlumb-1.3.2-all-min.js"></script>
+
+    <link rel="stylesheet" href="../libs/themes/ci.default/ci.default.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+
+    <style>
+        #UIApp-component {
+            top: 2em;
+            left: 10em;
+            width: 30em;
+        }
+
+        #RESTWebServices-component {
+            top: 20em;
+            left: 2em;
+        }
+
+        #ActiveMQEndpoint-component {
+            top: 20em;
+            left: 20em;
+        }
+
+        #LightStreamer-component {
+            top: 20em;
+            left: 40em;
+        }
+
+        #ActiveMQMessageBus-component {
+            top: 35em;
+            left: 4em;
+            width: 45em;
+        }
+
+        #MockTradingSystem-component {
+            top: 50em;
+            left: 20em;
+        }
+
+    </style>
+
+    <!--  demo code -->
+    <script type="text/javascript" src="connections.js"></script>
+</head>
+<body onunload="jsPlumb.unload();">
+
+<div style="position:absolute">
+    <div id="demo">
+        <div class="component window" id="UIApp-component">
+            <h3>UI client application</h3>
+        </div>
+        <div class="component window" id="RESTWebServices-component">
+            <h3>REST Web Services</h3>
+            <a href="http://50.19.161.92/TradingAPI">http://50.19.161.92/TradingAPI</a>
+        </div>
+        <div class="component window" id="ActiveMQEndpoint-component"><strong>ActiveMQ Endpoint</strong>
+        </div>
+        <div class="component window" id="LightStreamer-component"><strong>LightStreamer</strong>
+        </div>
+        <div class="component window" id="ActiveMQMessageBus-component"><strong>ActiveMQ Message Bus</strong>
+        </div>
+        <div class="component window" id="MockTradingSystem-component"><strong>Mock Trading System</strong>
+        </div>
+    </div>
+</div>
+
+<div id="debug"></div>
+
+</body>
+</html> 
