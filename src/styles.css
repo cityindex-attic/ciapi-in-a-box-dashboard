@@ -31,15 +31,21 @@ border-color:#5d94a6;
 
 .l1 {
     font-size:13px;
-
 }
 ._jsPlumb_connector { z-index:4; }
 ._jsPlumb_endpoint { z-index:5; }
 ._jsPlumb_overlay { z-index:6; }
+
 .hl { border:3px solid red; }
 
 h3 {
     font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+}
+
+h4 {
+    font-size: 0.8em;
     margin: 0px;
     padding: 0px;
 }

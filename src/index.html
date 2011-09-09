@@ -13,34 +13,43 @@
     <style>
         #UIApp-component {
             top: 2em;
-            left: 10em;
+            left: 20em;
             width: 30em;
         }
 
         #RESTWebServices-component {
-            top: 20em;
+            top: 15em;
             left: 2em;
+            height: 10em;
+            width: 20em;
         }
 
         #ActiveMQEndpoint-component {
-            top: 20em;
-            left: 20em;
+            top: 15em;
+            left: 25em;
+            height: 10em;
+            width: 20em;
         }
 
         #LightStreamer-component {
-            top: 20em;
-            left: 40em;
+            top: 15em;
+            left: 50em;
+            height: 10em;
+            width: 20em;
         }
 
         #ActiveMQMessageBus-component {
             top: 35em;
-            left: 4em;
+            left: 15em;
             width: 45em;
+            height: 7em;
         }
 
         #MockTradingSystem-component {
             top: 50em;
-            left: 20em;
+            left: 25em;
+            height: 20em;
+            width: 20em;
         }
 
     </style>
@@ -57,15 +66,46 @@
         </div>
         <div class="component window" id="RESTWebServices-component">
             <h3>REST Web Services</h3>
-            <a href="http://50.19.161.92/TradingAPI">http://50.19.161.92/TradingAPI</a>
+            <ul>
+                <li>Endpoint: <a href="http://50.19.161.92/TradingAPI">http://50.19.161.92/TradingAPI</a></li>
+                <li>Logs: <a href="http://50.19.161.92/logs/RESTWebServices.log">http://50.19.161.92/logs/RESTWebServices.log</a></li>
+            </ul>
         </div>
-        <div class="component window" id="ActiveMQEndpoint-component"><strong>ActiveMQ Endpoint</strong>
+        <div class="component window" id="ActiveMQEndpoint-component">
+            <h3>ActiveMQ Endpoint</h3>
+             <ul>
+                <li>Endpoint: ???</li>
+                <li>Logs: <a href="http://50.19.161.92/logs/activemq-endpoint.log">http://50.19.161.92/logs/activemq-endpoint.log</a></li>
+                <li>JMX: service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi</li>
+            </ul>
         </div>
-        <div class="component window" id="LightStreamer-component"><strong>LightStreamer</strong>
+        <div class="component window" id="LightStreamer-component">
+            <h3>LightStreamer</h3>
+            <ul>
+                <li>Endpoint: http://50.19.161.92:81/</li>
+                <li>Logs: <a href="http://50.19.161.92/logs/Lightstreamer.log">http://50.19.161.92/logs/Lightstreamer.log</a></li>
+                <li>Monitor: <a href="http://50.19.161.92:81/monitor/">http://50.19.161.92:81/monitor/</a></li>
+                <li>JMX: service:jmx:rmi:///jndi/rmi://localhost:8888/jmxrmi</li>
+            </ul>
         </div>
-        <div class="component window" id="ActiveMQMessageBus-component"><strong>ActiveMQ Message Bus</strong>
+        <div class="component window" id="ActiveMQMessageBus-component">
+            <h3>ActiveMQ Message Bus</h3>
+            <ul>
+                <li>Endpoint: tcp://localhost:61615</li>
+                <li>Logs: <a href="http://50.19.161.92/logs/activemq-messagebus.log">http://50.19.161.92/logs/activemq-messagebus.log</a></li>
+                <li>JMX: service:jmx:rmi:///jndi/rmi://localhost:1101/jmxrmi</li>
+            </ul>
+            <strong></strong>
         </div>
-        <div class="component window" id="MockTradingSystem-component"><strong>Mock Trading System</strong>
+        <div class="component window" id="MockTradingSystem-component">
+            <h3>Mock Trading System</h3>
+            <div id="scenario1">
+                <h4>Scenario 1</h4>
+                <ul>
+                    <li>Valid usernames:  CC735158/password</li>
+                    <li>Prices:  1 - ??? how does this behave</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
